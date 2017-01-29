@@ -1,0 +1,47 @@
+{
+  "name": "gamesys1701",
+  "version": "1.0.0",
+  "description": "An HTML5/Javascript video game framework + build environment (2017 edition)",
+  "main": "SYS1701.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.18.6",
+    "browserify": "^14.0.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-changed": "^1.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-uglify": "^2.0.1",
+    "merge-stream": "^1.0.1",
+    "run-sequence": "^1.2.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0",
+    "yargs": "^6.6.0"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daveseah/1701.git"
+  },
+  "keywords": [
+    "javascript",
+    "game",
+    "framework",
+    "education"
+  ],
+  "author": "Dave Seah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daveseah/1701/issues"
+  },
+  "homepage": "https://github.com/daveseah/1701#readme"
+}

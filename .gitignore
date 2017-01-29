@@ -49,10 +49,9 @@ Thumbs.db
 
 # Addition Project 1701 ignores
 .npmignore
-/bower_components
-/public
-/node_modules
-/deploy
+/build/bower_components
+/build/node_modules
+/dist
 
 # 1401 - Also ignore scratch files
 *-scratch.md
