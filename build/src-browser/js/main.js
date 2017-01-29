@@ -9,4 +9,4 @@
 
 var sys1701 = require('1701/system');
 
-module.exports.name = 'sys1701';
+console.log('main.js running');
