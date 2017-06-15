@@ -9,4 +9,8 @@
 
 var sys1701 = require('1701/system');
 
-console.log('main.js running');
+
+function hello( compiler :string) {
+	console.log(`main.ts run ${compiler}`);
+}
+hello("hello world");

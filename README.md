@@ -1,12 +1,17 @@
 #### PROJECT SUMMARY
 
-Project 1701 is a refactored version of [Engine 1401A1](https://github.com/daveseah/1401A1), a HTML5/Javascript **video game framework + build environment** for exploring webapp development concepts / making web-based educational applications. 
+1701 is a refactored version of [Engine 1401A1](https://github.com/daveseah/1401A1), which is my ongoing effort to make a nice HTML5/Javascript environment for playing with web-based game development. 
 
 #### QUICK START
 
-Install **Git** and **Node** if you haven't already. You will be using a **terminal** window to issue all following instructions from the command line.
+Install **Git** and **Node** if you haven't already. I'm also using **Yarn**, which is an alternative to Node's **npm** package manager. 
 
-(1) If you haven't already installed **gulp-cli**, do so now:
+(1) Install yarn through npm. Also install **gulp-cli**, which is 
+```
+  > npm install -g yarn
+```
+
+(2) If you haven't already installed **gulp-cli**, do so now:
 ```
   > npm install -g gulp-cli
 ```
@@ -23,7 +28,7 @@ This will create a folder called `1701` inside your dev folder that contains the
 ```
   > cd 1701
   > cd build
-  > npm install
+  > yarn
 ```
 
 (4) Now you're ready to **build and run** the project! Type the following: 
