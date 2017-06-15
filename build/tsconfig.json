@@ -1,15 +1,9 @@
 {
-	"files" : [
-		"src-browser/module/main.ts"
-	],
 	"compilerOptions": {
 		"noImplicitAny" : true,
-		"target" : "es2015",
-		"types" : [
-			"node"
-		],
-		"typeRoots": [
-			"node_modules/@types"
-		]
+		"target"        : "es2015",
+		"types"         : ["node"],
+		"typeRoots"     : ["node_modules/@types"],
+		"allowSyntheticDefaultImports" : true
 	}
 }

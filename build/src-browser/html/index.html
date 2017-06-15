@@ -1,13 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>1701 MAIN</title>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <!-- page content -->
-    <p>Hello World. How are you? I am fine.</p>
-    <script src="bundle.js"></script>
-  </body>
+<html>
+	<head>
+		<title>1701</title>
+
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<script type="text/javascript">
+			if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+				var msViewportStyle = document.createElement("style");
+				var mq = "@@-ms-viewport{width:auto!important}";
+				msViewportStyle.appendChild(document.createTextNode(mq));
+				document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="system-shell">
+			<div class="splash">
+				<div class="message">
+						Loading
+				</div>
+			</div>
+		</div>
+		<script src="bundle.js"></script>
+	</body>
+	
 </html>

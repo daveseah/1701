@@ -54,14 +54,25 @@ const HTML      = SOURCE+'html/';
 
 /// BROWSERIFY-BASED BUILD ////////////////////////////////////////////////////
 /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-	var browserifyOpts = Object.assign({}, watchify.args, {
+	let browserifyOpts = Object.assign({}, watchify.args, {
 		debug        : true,
-		entries      : [ MODULES+'main.ts' ],
+		// 'entries' specifies the entry point for tsify too
+		entries      : [ MODULES+'main.jsx' ],
 		paths        : [ './node_modules', MODULES ],
 		extensions   : [ '.jsx' ],
-		cache        : {},
+		cache        : {}
+		,
 		packageCache : {}
 	});
+	var babelOpts = {
+		presets : ['es2015','react']
+	};
+	var cssOpts = {
+		rootDir : SOURCE,
+		autoInject : true,
+		minify : true
+	};
+
 /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 	var watchifiedBundler = watchify(browserify( browserifyOpts ));
 		watchifiedBundler.on('log',gutil.log);
@@ -69,9 +80,8 @@ const HTML      = SOURCE+'html/';
 	function bundle () {
 		return watchifiedBundler
 			.plugin(tsify)
-			.transform('babelify',{
-				presets    : ['es2015','react']
-			})
+			.transform('babelify', babelOpts) 
+			.transform('browserify-css',cssOpts)
 			.bundle()
 			.on('error', function(err) {
 				gutil.log(err.toString(),'\u0007\u0007\u0007');

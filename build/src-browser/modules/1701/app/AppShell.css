@@ -1,0 +1,5 @@
+/* AppShell.css */
+/* url root is SOURCE directory (see gulpfile cssOpts) */
+@import url("/css/bootstrap-theme3.3.6.min.css");
+@import url("/css/bootstrap3.3.6.min.css");
+@import url("/css/react-bootstrap.min.css");
